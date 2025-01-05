@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "유데미 대본 복사기",
+  "version": "1.0",
+  "description": "유데미 강의 대본을 클립보드로 복사할 수 있습니다.",
+  "permissions": ["scripting", "activeTab", "clipboardWrite"],
+  "host_permissions": ["https://www.udemy.com/*"],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "48": "icon.png",
+          "128": "icon.png"
+      }
+  }
+}
